@@ -1,0 +1,24 @@
+{
+  "name": "fastify-mongoose-odm",
+  "version": "1.0.0",
+  "description": "Fastify Plugin for injecting Mongoose into your project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Selali Adobor",
+  "license": "ISC",
+  "keywords": [
+    "mongoose",
+    "fastify",
+    "odm",
+    "mongodb",
+    "mongo"
+  ],
+  "peerDependencies": {
+    "mongoose": "5.x"
+  },
+  "dependencies": {
+    "fastify-plugin": "^1.4.0"
+  }
+}
