@@ -9,11 +9,11 @@ module.exports = fp((fastify, options, next) => {
     let isOptionsUri = options instanceof String;
 
     let uri = isOptionsUri ? options : options.uri;
-    let options = isOptionsUri ? {} : options.options;
+    let mongoOptions = isOptionsUri ? {} : options.options;
 
     Mongoose.connect(
         uri,
-        options,
+        mongoOptions,
         err => {
             if (err) {
                 return next(err);
